@@ -1,0 +1,17 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vaibhaw singh",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "accessibility": "^6.1.0",
+    "cookie-parser": "^1.4.7",
+    "express": "^5.1.0",
+    "one-liner-joke": "^1.2.2"
+  }
+}
