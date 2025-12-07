@@ -1,0 +1,21 @@
+{
+  "name": "backend_development",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "type": "module",
+    "start": "node script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vaibhaw2003/BACKEND-DEVELOPMENT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vaibhaw2003/BACKEND-DEVELOPMENT/issues"
+  },
+  "homepage": "https://github.com/Vaibhaw2003/BACKEND-DEVELOPMENT#readme",
+  "description": ""
+}
