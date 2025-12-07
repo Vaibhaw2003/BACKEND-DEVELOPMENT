@@ -18,7 +18,7 @@
 
 const fs = require('fs'); //npm ka koii bhi package use karne ke liye use requore karna hoga.
 
-// ----01--[ writeFile ]--------
+// ----01--[ writeFile ]--------(es ka use file bana ke data store karne ke liye hota hai)
 /*
  fs.writeFile("hey.txt", 'my name is vaibhaw singh', function(err){
     if(err){
@@ -29,7 +29,7 @@ const fs = require('fs'); //npm ka koii bhi package use karne ke liye use requor
  })
  */
 
- //-------02----[ readeFile ]----------
+ //-------02----[ readeFile ]----------(es ka use file me se data ko rede karne ke liye hota hai)
 /*
  fs.readFile('hey.txt', function(err){
     if(err){
@@ -41,7 +41,8 @@ const fs = require('fs'); //npm ka koii bhi package use karne ke liye use requor
 
  */
 
- //--------03-----[ appendFile ]------------
+ //--------03-----[ appendFile ]------------(esh ka use kisi bhi file me re-data add karne ke liye hota hai)
+/*
 
  fs.appendFile("hey.txt", " haey kaise ho brother" , function(err){
     if(err){
@@ -51,4 +52,68 @@ const fs = require('fs'); //npm ka koii bhi package use karne ke liye use requor
     }
  })
 
+ */
 
+ //-----------04----[ rename  ]---(es ka use old file ke name ko change karne ke liye hota hai).
+/*
+ fs.rename("hey.txt", "hello.txt" , function(err){
+    if(err) {
+        console.error("err")
+    }else{
+        console.log("done")
+    }
+ })
+
+ */
+ //-----------05----[ copyFile ]--------(es ka mtlb hai ki data ko ak file me se kisi or file me copy karna).
+/*
+ fs.copyFile("hello.txt", "./copy/copy.txt", function(err){
+    if(err){
+        console.error(err.message)
+    }else{
+        console.log("done")
+    }
+ })
+
+ */
+
+ //-----------06----[ unlink ]-------(es ka mtlb hai file ko delet karna ).
+/* 
+fs.unlink("copy" , function(err){
+    if(err){
+        console.error(err)
+    }else{
+        console.log("done")
+    }
+})
+*/
+
+//--------07----------[ rmdir ]--------( yah anumati deta hai blanck folder ko delet karne ko ).
+/*
+fs.rmdir('./new backend/backend-v02/copy' , function(err){
+    if(err){
+        console.error(err.message)
+    }else{
+        console.log("done")
+    }
+})
+*/
+//(recursive - tru [use kar ke file with data wala folder bhi delet ho jayega])
+
+
+//---------08----[ createFolder ]-----( with the use of it we crete folder ).
+/*
+fs.createReadStream("juji.txt")
+
+*/
+
+
+// ----------[  http / https]----( ye hay rule hai ya protocol hai ).
+// http- protocol (yahi protocol hahi ya rule hai jisko follow kare bina aap internet pe naa hi kuchh bhej sakte ho , naa hi kuchh manga skte ho.)
+
+const http = require('http')
+const Server = http.createServer( function(req , res){
+    res.end("hello my famaliy");
+})
+
+Server.listen(3000);
