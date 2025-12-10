@@ -3,14 +3,15 @@ const app = express();
 const usereModel = require('./usermodel');
 
 app.get("/", function(req, res){
-    res.send("heww");
+    res.send("created done");
 })
 
 app.get("/create",async function(req, res){
    let createduser = await usereModel.create({
     name :"satyam singh",
     email :"vaibhaw@gamil.com",
-    username :" satyam singh"
+    product :"iphone",
+    country : "india"
    });
 });
 

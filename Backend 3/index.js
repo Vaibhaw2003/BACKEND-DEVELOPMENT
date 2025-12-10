@@ -8,9 +8,9 @@ app.set('view engin', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-app.get("/", function(req, res,){
-    res.render(index);
-})
+app.get("/", function(req, res){
+    res.render(index.ejs);
+});
 
 app.listen(3000);
 
