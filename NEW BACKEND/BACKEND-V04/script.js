@@ -25,7 +25,7 @@ app.get('/', function(req, res){  //  [ / it means routd yah page craete karne k
 });  // eshka mtlb hai ki koi / pe jayega to ushke name show hoga.
 
 
-app.get('/profile', function(req, res){
+app.get('/unit.html', function(req, res){
     res.send("thise is profile page") // yaha pe response send kar raha hu server se .
 });
 
@@ -58,7 +58,7 @@ app.listen(3000);// server and port likhna imp hai.
  //})
 
 //-----error handling----------
-
+/* 
 app.get("/pro", function(req, res ,next){
     return next(new Error("somthing went wrong")) // or ye wala part backend pe show hoga
 });
@@ -68,3 +68,5 @@ app.use((err, req, res, next) =>{
     console.error(err.stack)
     res.status(500).send('somthing is broken!')  // ye wala part prontent pe show hoga 
 });
+
+*/
