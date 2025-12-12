@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CORS Demo</title>
+</head>
+<body>
+
+<h2>Frontend → Backend CORS Demo</h2>
+<button onclick="callAPI()">Call Backend API</button>
+
+<p id="output"></p>
+
+<script>
+  function callAPI() {
+    fetch("http://localhost:5000/")
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById("output").innerText =
+          JSON.stringify(data, null, 2);
+      })
+      .catch(err => console.log(err));
+  }
+</script>
+
+</body>
+</html>

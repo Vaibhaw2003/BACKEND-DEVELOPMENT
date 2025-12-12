@@ -59,6 +59,5 @@ app.listen(3000, function(){   // eska use hota hai server ko chalane ke liye.
 
 // example  --( "/inde.js/:harsh" ) / jo part ko dynamic banana hai ushke age[ : ]ye wala saymbol laya do.
 
-// 
 
 
