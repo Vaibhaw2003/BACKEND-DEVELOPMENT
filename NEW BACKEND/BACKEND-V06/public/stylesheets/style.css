@@ -9,3 +9,26 @@ html,body{
     background-color: aquamarine;
     font-family: Arial, Helvetica, sans-serif;
 }
+.nav{
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    text-transform: capitalize;
+}
+.card{
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    padding-top: 4px;
+    display: flex;
+}
+.btn{
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+}
