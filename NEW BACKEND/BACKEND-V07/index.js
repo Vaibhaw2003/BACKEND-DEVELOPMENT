@@ -13,6 +13,14 @@ app.get('/', function(req, res){
        //console.log(files);
        res.render("index", {files : files}) // we use rendar because of we use views engine , ejs.
        });
+    });
+
+
+    app.post('/create', function(req, res){
+        fs.writeFile(`./files/${req.body.title.split(' ').join('')}.txt`, req.body.details, function(err){
+            res.redirect("/")
+        })
+
     })
     
 
